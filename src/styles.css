@@ -15,10 +15,19 @@ h3 {
   margin: 20px auto;
 }
 
+.weather img {
+  height: 50px;
+  width: 50px;
+}
+
 ul {
   list-style-type: none;
   margin: 15px;
   padding: 0;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
 
 h2 .units {
