@@ -1,27 +1,32 @@
-body {
-  border: solid 2px;
-  border-radius: 2%;
-  margin: 20px;
+.container {
+  border: solid 1px #dadde1;
+  border-radius: 10px;
+  line-height: normal;
+  margin: 30px 30px 10px 30px;
   padding: 20px;
+  max-width: 800px;
 }
+
+h3 {
+  margin: 20px auto;
+}
+
 ul {
   list-style-type: none;
+  margin: 15px;
+  padding: 0;
 }
-.current-weather {
-  text-align: center;
+
+h2 .units {
+  font-size: medium;
 }
-.city {
-  text-align: center;
+
+p {
+  margin-top: 20px;
 }
-.container .c1 {
-  position: fixed;
-  text-align: center;
-  right: 40px;
-  top: 40px;
-}
+
 .footer {
   font-size: small;
-  padding: 20px;
-  margin: auto 0;
-  text-align: center;
+  margin-left: 35px;
+  text-align: left;
 }
