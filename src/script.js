@@ -45,7 +45,7 @@ function displayForecast(response) {
 
   let forecastHTML = "";
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 7) {
       forecastHTML =
         forecastHTML +
         `<div class="row">
@@ -60,7 +60,9 @@ function displayForecast(response) {
           <div class="col-3">${Math.round(forecastDay.temp.min)}° ${Math.round(
           forecastDay.temp.max
         )}° </div>
-          <div class="col-3">Day length</div>
+          <div class="col-3"> Sunrise ${forecastDay.sunrise} - Sunset ${
+          forecastDay.sunset
+        }</div>
         </div>`;
     }
   });
