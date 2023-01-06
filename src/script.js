@@ -37,10 +37,21 @@ function formatDay(timestamp) {
   ];
   return days[day];
 }
-
+function formatHours(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`;
+}
 function displayForecast(response) {
+  console.log(response.data);
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = "";
@@ -60,9 +71,9 @@ function displayForecast(response) {
           <div class="col-3">${Math.round(forecastDay.temp.min)}° ${Math.round(
           forecastDay.temp.max
         )}° </div>
-          <div class="col-3"> Sunrise ${forecastDay.sunrise} - Sunset ${
-          forecastDay.sunset
-        }</div>
+          <div class="col-3"> Sunrise ${formatHours(
+            forecastDay.sunrise
+          )} - <span>Sunset ${formatHours(forecastDay.sunset)}</span></div>
         </div>`;
     }
   });
