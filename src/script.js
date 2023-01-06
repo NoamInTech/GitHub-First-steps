@@ -50,7 +50,6 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 function displayForecast(response) {
-  console.log(response.data);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
@@ -60,20 +59,19 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `<div class="row">
-          <div class="col-1"></div>
-          <div class="col-3"><img
+          <div class="col-4"><img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
           width="42"
         /> ${formatDay(forecastDay.dt)}</div>
-          <div class="col-3">${Math.round(forecastDay.temp.min)}° ${Math.round(
-          forecastDay.temp.max
-        )}° </div>
-          <div class="col-3"> Sunrise ${formatHours(
+          <div class="col-4"><span id="min">🧊 ${Math.round(
+            forecastDay.temp.min
+          )}°C - </span>🔥 ${Math.round(forecastDay.temp.max)}°C </div>
+          <div class="col-4">🌅 ${formatHours(
             forecastDay.sunrise
-          )} - <span>Sunset ${formatHours(forecastDay.sunset)}</span></div>
+          )} - 🌃 ${formatHours(forecastDay.sunset)}</div>
         </div>`;
     }
   });

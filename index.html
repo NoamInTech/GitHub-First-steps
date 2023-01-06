@@ -16,9 +16,10 @@
   </head>
   <body>
     <div class="container">
+      <h3>Hello!</h3>
       <form class="search-form" id="city-form">
         <div class="row">
-          <div class="col-4">
+          <div class="col-8">
             <input
               type="search"
               placeholder="Travel to a city 🔍"
@@ -41,17 +42,17 @@
             <input
               id="current-position"
               type="submit"
-              value="Current"
+              value="📍 Here"
               class="form-control btn btn-light shadow-sm"
             />
           </div>
         </div>
       </form>
-      <h3>Good evening!</h3>
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-2" style="margin: 5px">Current weather in</div>
-        <div class="col-3">
+        <div class="col-4">
+          <p>Current weather in</p>
+        </div>
+        <div class="col-4">
           <h1 id="city">London</h1>
           <h2>
             <div class="weather">
@@ -73,7 +74,7 @@
           </ul>
         </div>
       </div>
-      <p><strong>Get ready for the week!</strong></p>
+      <div class="subtitle"><strong>Get ready for the week!</strong></div>
       <div class="weather-forecast" id="forecast"></div>
     </div>
     <div class="footer">
@@ -82,7 +83,10 @@
         target="_blank"
         >Open-source code</a
       >
-      by Noémie Pivin
+      by Noémie Pivin hosted on
+      <a href="https://ornate-palmier-0cb487.netlify.app/" target="_blank"
+        >Netlify</a
+      >.
     </div>
     <script src="src/script.js"></script>
   </body>

@@ -7,17 +7,19 @@
   max-width: 800px;
 }
 
+form {
+  margin: 20px 0 20px 0;
+}
+
 h2 {
   display: inline-block;
 }
 
-h3 {
-  margin: 20px auto;
+h2 .units {
+  font-size: medium;
 }
-
-.weather img {
-  height: 50px;
-  width: 50px;
+p {
+  margin-top: 20px;
 }
 
 ul {
@@ -30,8 +32,13 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-h2 .units {
-  font-size: medium;
+.subtitle {
+  padding: 20px 0 20px 0;
+}
+
+.weather img {
+  height: 50px;
+  width: 50px;
 }
 
 .weather .active {
@@ -42,10 +49,6 @@ h2 .units {
 
 .weather .active:hover {
   text-decoration: none;
-}
-
-p {
-  margin-top: 20px;
 }
 
 .footer {
