@@ -66,12 +66,12 @@ function displayForecast(response) {
           alt=""
           width="42"
         /> ${formatDay(forecastDay.dt)}</div>
-          <div class="col-4"><span id="min">🧊 ${Math.round(
+          <div class="col-4">🧊 ${Math.round(
             forecastDay.temp.min
-          )}°C - </span>🔥 ${Math.round(forecastDay.temp.max)}°C </div>
+          )}°C <strong>🔥 ${Math.round(forecastDay.temp.max)}°C </strong></div>
           <div class="col-4">🌅 ${formatHours(
             forecastDay.sunrise
-          )} - 🌃 ${formatHours(forecastDay.sunset)}</div>
+          )} 🌃 ${formatHours(forecastDay.sunset)}</div>
         </div>`;
     }
   });
