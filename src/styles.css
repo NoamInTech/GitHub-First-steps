@@ -13,11 +13,9 @@ form {
 
 h2 {
   display: inline-block;
+  font-size: 24px;
 }
 
-h2 .units {
-  font-size: medium;
-}
 p {
   margin-top: 20px;
 }
@@ -33,22 +31,13 @@ li:first-letter {
 }
 
 .subtitle {
+  font-weight: bold;
   padding: 20px 0 20px 0;
 }
 
 .weather img {
-  height: 50px;
-  width: 50px;
-}
-
-.weather .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather .active:hover {
-  text-decoration: none;
+  height: 45px;
+  width: 45px;
 }
 
 .footer {

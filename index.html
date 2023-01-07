@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noam's weather app</title>
+    <title>🌈 Noam's Weather App ☔️</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       <h3>Hello!</h3>
-      <form class="search-form" id="city-form">
+      <form id="city-form">
         <div class="row">
           <div class="col-8">
             <input
@@ -56,12 +56,8 @@
           <h1 id="city">London</h1>
           <h2>
             <div class="weather">
-              <img src="" alt="Clear" id="icon" class="float-left" />
-              <span class="temperature" id="temperature"></span>
-              <span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a> |
-                <a href="#" id="fahrenheit-link">°F</a>
-              </span>
+              <img src="" id="icon" />
+              <span id="temperature"></span> °C
             </div>
           </h2>
         </div>
@@ -74,8 +70,8 @@
           </ul>
         </div>
       </div>
-      <div class="subtitle"><strong>Get ready for the week!</strong></div>
-      <div class="weather-forecast" id="forecast"></div>
+      <div class="subtitle">Get ready for the week!</div>
+      <div id="forecast"></div>
     </div>
     <div class="footer">
       <a
